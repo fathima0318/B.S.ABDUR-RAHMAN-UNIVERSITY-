@@ -60,4 +60,7 @@ public class DiscoveryBean {
 	public void setCategory(String category) {
 		this.category = category;
 	}
+	
+	
+
 }

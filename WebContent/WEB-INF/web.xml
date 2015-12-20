@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>loginServlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>reg.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <description></description>
+    <display-name>CreateDiscovery</display-name>
+    <servlet-name>CreateDiscovery</servlet-name>
+    <servlet-class>com.CreateDiscovery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateDiscovery</servlet-name>
+    <url-pattern>/CreateDiscovery</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/LoginFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DisplayDiscovery</display-name>
+    <servlet-name>DisplayDiscovery</servlet-name>
+    <servlet-class>com.DisplayDiscovery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayDiscovery</servlet-name>
+    <url-pattern>/DisplayDiscovery</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ViewDiscovery</display-name>
+    <servlet-name>ViewDiscovery</servlet-name>
+    <servlet-class>com.ViewDiscovery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewDiscovery</servlet-name>
+    <url-pattern>/ViewDiscovery</url-pattern>
+  </servlet-mapping> 
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>ViewLargeImage</display-name>
+    <servlet-name>ViewLargeImage</servlet-name>
+    <servlet-class>com.ViewLargeImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewLargeImage</servlet-name>
+    <url-pattern>/ViewLargeImage</url-pattern>
+  </servlet-mapping>
+</web-app>
